@@ -8,7 +8,7 @@ class App < Sinatra::Base
 end
 
 class CurrentWeatherController < Sinatra::Base
-    APIKEY = "61816105fcfda6e6f29e0b2f0fa37374"
+    APIKEY = "xxxxxxxx"
     currentWether = Weather.new(APIKEY)
     get "/:name" do
       "<h1>現在の天気を返すミニアプリです。</h1>"
