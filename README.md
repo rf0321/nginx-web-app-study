@@ -1,4 +1,14 @@
 # nginx-web-app-study
+# This application architecture
+```
+                  Reverse Proxy　               BackEnd Server
+                  --------                     ---------- 
+                  |       | Organized Request  |         |
+Client Request===>| Nginx |===================>| Unicorn | == SinatraApp
+                  |       |                    |         |
+                  |       |                    |         |
+                  --------                     ----------
+```
 # Setup
 1.clone this repository and move to app directory
 
